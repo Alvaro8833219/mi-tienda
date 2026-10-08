@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DELGA STORE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">DELGA STORE</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button id="carritoBtn">
+            🛒 Carrito (<span id="contador">0</span>)
+        </button>
+    </header>
+
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-contenido">
+
+            <p>NUEVA COLECCIÓN</p>
+
+            <h1>
+                TU ESTILO.<br>
+                <span>TU TIENDA.</span>
+            </h1>
+
+            <p>
+                Descubre nuestra selección de ropa y accesorios
+                a precios increíbles.
+            </p>
+
+            <a href="#productos" class="boton">
+                VER PRODUCTOS
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="productos" class="productos">
+
+        <h2>Productos</h2>
+
+        <div class="productos-grid">
+
+            <div class="producto">
+
+                <div class="imagen-producto">
+                    👕
+                </div>
+
+                <h3>Camiseta Basic</h3>
+
+                <p class="precio">19,99 €</p>
+
+                <button onclick="añadirCarrito('Camiseta Basic', 19.99)">
+                    Añadir al carrito
+                </button>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="imagen-producto">
+                    👖
+                </div>
+
+                <h3>Pantalón Urban</h3>
+
+                <p class="precio">34,99 €</p>
+
+                <button onclick="añadirCarrito('Pantalón Urban', 34.99)">
+                    Añadir al carrito
+                </button>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="imagen-producto">
+                    👟
+                </div>
+
+                <h3>Zapatillas Street</h3>
+
+                <p class="precio">49,99 €</p>
+
+                <button onclick="añadirCarrito('Zapatillas Street', 49.99)">
+                    Añadir al carrito
+                </button>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="imagen-producto">
+                    🧥
+                </div>
+
+                <h3>Chaqueta Denim</h3>
+
+                <p class="precio">44,99 €</p>
+
+                <button onclick="añadirCarrito('Chaqueta Denim', 44.99)">
+                    Añadir al carrito
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="nosotros" class="nosotros">
+
+        <h2>Sobre nosotros</h2>
+
+        <p>
+            Somos una tienda independiente dedicada a ofrecer
+            ropa y accesorios seleccionados a buenos precios.
+        </p>
+
+    </section>
+
+
+    <section id="contacto" class="contacto">
+
+        <h2>Contacto</h2>
+
+        <p>
+            ¿Tienes alguna pregunta? Escríbenos.
+        </p>
+
+        <a href="mailto:tuemail@gmail.com" class="boton">
+            CONTACTAR
+        </a>
+
+    </section>
+
+
+    <div id="carrito" class="carrito">
+
+        <div class="carrito-contenido">
+
+            <button id="cerrarCarrito" class="cerrar">
+                ✕
+            </button>
+
+            <h2>Tu carrito</h2>
+
+            <div id="productosCarrito"></div>
+
+            <h3>
+                Total:
+                <span id="total">0,00 €</span>
+            </h3>
+
+            <button class="comprar" onclick="comprar()">
+                CONTINUAR CON EL PEDIDO
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <p>© 2026 DELGA STORE</p>
+
+        <p>Todos los derechos reservados.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
